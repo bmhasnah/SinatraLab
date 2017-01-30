@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; -->
 <!-- any other head content must come *after* these tags -->
-<title>Bootstrap 101 Template</title>
+<title>Sinatra Lab</title>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap -->
@@ -15,8 +15,9 @@
 min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 crossorigin="anonymous">
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstraptheme.min.css"
-integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-
+4
+theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
 crossorigin="anonymous">
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.
@@ -30,6 +31,120 @@ crossorigin="anonymous"></script>
 <![endif]-->
 </head>
 <body>
-<h1>Hello, world!</h1>
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">Brand</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+<li><a href="#">Link</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#">Separated link</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#">One more separated link</a></li>
+</ul>
+</li>
+</ul>
+<form class="navbar-form navbar-left">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Search">
+</div>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#">Link</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#">Separated link</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Application Design and Development</h3>
+</div>
+<div class="panel-body">
+<p>In this class, we are going to cover a lot of material and you will have the opportunity
+to pull together a lot of your prior learning to develop robust and resilient web based
+applications</p>
+<h4>Now for some form action:</h4>
+<!-- To be filled in with panel information -->
+<form class="form-horizontal" action="/" method="post">
+<fieldset>
+<!-- Form Name -->
+<legend>Application Design and Development</legend>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="firstname">First Name</label>
+<div class="col-md-4">
+<input id="firstname" name="firstname" type="text" placeholder="Dan"
+class="form-control input-md">
+</div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="lastname">Last Name</label>
+<div class="col-md-4">
+<input id="lastname" name="lastname" type="text" placeholder="Phelps"
+class="form-control input-md">
+</div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+<label class="col-md-4 control-label" for="class_love">How much do you love this class?</label>
+<div class="col-md-4">
+<select id="class_love" name="class_love" class="form-control">
+<option value="A lot">A lot</option>
+<option value="A Whole Lot">A Whole Lot</option>
+<option value="A Really Whole Lot">A Really Whole Lot</option>
+<option value="More than I care to say">More than I care to say</option>
+</select>
+</div>
+</div>
+<!-- Textarea -->
+<div class="form-group">
+<label class="col-md-4 control-label" for="feedback">Random Feedback</label>
+<div class="col-md-4">
+<textarea class="form-control" id="feedback" name="feedback">Give us feedback...</textarea>
+</div>
+</div>
+<!-- Button -->
+<div class="form-group">
+<label class="col-md-4 control-label" for="submit"></label>
+<div class="col-md-4">
+<button id="submit" name="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+</fieldset>
+</form>
+</div>
+</div>
 </body>
 </html>
